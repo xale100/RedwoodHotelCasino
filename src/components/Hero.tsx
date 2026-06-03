@@ -68,11 +68,6 @@ export default function Hero() {
         </Link>
       </div>
 
-      {/* Scroll hint */}
-      <div className="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 opacity-40">
-        <span className="font-body text-parchment text-[9px] tracking-[0.25em] uppercase">Scroll</span>
-        <div className="w-px h-7 bg-gradient-to-b from-parchment to-transparent" />
-      </div>
     </section>
   );
 }
