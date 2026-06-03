@@ -2,12 +2,49 @@ import Image from "next/image";
 import Link from "next/link";
 
 const BUSINESSES = [
-  { name: "Trees of Mystery", type: "Attraction", desc: "Giant redwoods, gondola rides, and a museum of Native American artifacts." },
-  { name: "Klamath River Jet Boat Tours", type: "Adventure", desc: "Jet boat up the Klamath to see Roosevelt Elk, black bears, and river wildlife." },
-  { name: "Blue Creek Guide Service", type: "Fishing", desc: "Half-day and full-day guided salmon and steelhead fishing on the Klamath." },
-  { name: "Requa Inn", type: "Lodging", desc: "Historic 1914 inn perched above the Klamath River mouth, steps from the coast." },
-  { name: "Pem-Mey Fuel Mart", type: "Services", desc: "Yurok-owned fuel and convenience on the way in or out of Klamath." },
-  { name: "Country Club Bar and Grill", type: "Dining", desc: "Local favorite for burgers, beer, and a warm welcome from the Klamath community." },
+  {
+    name: "Klamath River Jet Boat Tours",
+    type: "Adventure",
+    desc: "Jet boat up the Klamath to see Roosevelt Elk, black bears, and river wildlife up close.",
+    yurokEnterprise: true,
+  },
+  {
+    name: "Riverside RV Park",
+    type: "RV & Camping",
+    desc: "Full hookups on the Klamath River — the ideal base for RV travelers rolling through on Hwy 101.",
+    yurokEnterprise: true,
+    rvNote: "Book direct · Full hookups · River frontage",
+  },
+  {
+    name: "Pem-Mey Fuel Mart",
+    type: "Services",
+    desc: "Yurok-owned fuel and convenience — stocked and ready on the way in or out of Klamath.",
+    yurokEnterprise: true,
+  },
+  {
+    name: "Trees of Mystery",
+    type: "Attraction",
+    desc: "Giant redwoods, gondola rides, and a museum of Native American artifacts.",
+    yurokEnterprise: false,
+  },
+  {
+    name: "Blue Creek Guide Service",
+    type: "Fishing",
+    desc: "Half-day and full-day guided salmon and steelhead fishing on the Klamath River.",
+    yurokEnterprise: false,
+  },
+  {
+    name: "Requa Inn",
+    type: "Lodging",
+    desc: "Historic 1914 inn above the Klamath River mouth — steps from the coast.",
+    yurokEnterprise: false,
+  },
+  {
+    name: "Country Club Bar and Grill",
+    type: "Dining",
+    desc: "Local favorite for burgers, cold beer, and a warm welcome from the Klamath community.",
+    yurokEnterprise: false,
+  },
 ];
 
 const DAY_TRIPS = [
@@ -15,6 +52,13 @@ const DAY_TRIPS = [
   "Roosevelt Elk herd on Newton B. Drury Scenic Parkway",
   "Hidden Beach Trail — coastal bluffs and tide pools",
   "Su-Mêg Village — ancestral Yurok cultural village",
+];
+
+const GATEWAY = [
+  "30 min to Fern Canyon",
+  "45 min to Redwood NP Visitor Center",
+  "2 hrs from Eureka",
+  "3 hrs from Medford, OR",
 ];
 
 export default function NearbySpotlight() {
@@ -35,9 +79,9 @@ export default function NearbySpotlight() {
           </div>
           <div>
             <p className="font-body text-text-dark/70 text-[15px] leading-relaxed mb-4">
-              Redwood Hotel Casino sits at the heart of Yurok Country, surrounded
-              by some of the most spectacular landscapes on the Pacific Coast.
-              Use us as your base for everything Klamath has to offer.
+              Check in here and you&rsquo;re at the center of Yurok Country — within reach
+              of everything on the river and the coast, including several tribally owned
+              enterprises that make your visit count for the whole community.
             </p>
             <Link
               href="/nearby"
@@ -54,39 +98,51 @@ export default function NearbySpotlight() {
         {/* Image + businesses grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-10">
           {/* Treehouse photo */}
-          <div className="relative rounded-[4px] overflow-hidden lg:row-span-2" style={{ minHeight: 280 }}>
+          <div className="relative rounded-[4px] overflow-hidden lg:row-span-3" style={{ minHeight: 280 }}>
             <Image
               src="/klamath-treehouse.png"
-              alt="Klamath River treehouse lodging along the river"
+              alt="Klamath River country — Yurok ancestral land"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 33vw"
             />
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,26,15,0.6) 0%, transparent 50%)" }} />
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,26,15,0.65) 0%, transparent 50%)" }} />
             <p className="absolute bottom-4 left-4 font-display italic text-parchment text-lg" style={{ fontWeight: 300 }}>
               Klamath River Country
             </p>
           </div>
 
-          {/* Businesses list */}
+          {/* Business cards */}
           {BUSINESSES.map((b) => (
             <div
               key={b.name}
-              className="bg-white rounded-[4px] p-5 border border-parchment/60"
+              className={`rounded-[4px] p-5 border ${b.yurokEnterprise ? "bg-white border-river/25" : "bg-white border-parchment/60"}`}
             >
-              <span className="eyebrow text-xs mb-2 block">{b.type}</span>
+              <div className="flex items-center gap-2 mb-2 flex-wrap">
+                <span className="eyebrow text-xs">{b.type}</span>
+                {b.yurokEnterprise && (
+                  <span className="inline-flex items-center gap-1 text-[9px] font-body font-semibold tracking-[0.12em] uppercase text-river border border-river/40 px-2 py-0.5 rounded-full">
+                    ◆ Yurok Enterprise
+                  </span>
+                )}
+              </div>
               <h3 className="font-display text-text-dark text-lg leading-snug mb-1" style={{ fontWeight: 500 }}>
                 {b.name}
               </h3>
               <p className="font-body text-text-dark/60 text-[13px] leading-relaxed">{b.desc}</p>
+              {b.rvNote && (
+                <p className="font-body text-river text-[12px] font-medium mt-2">
+                  {b.rvNote}
+                </p>
+              )}
             </div>
           ))}
         </div>
 
-        {/* Day trips strip */}
+        {/* Day trips + gateway distances */}
         <div className="border-t border-text-dark/10 pt-8">
           <p className="eyebrow mb-4">Day Trips from the Property</p>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
             {DAY_TRIPS.map((trip) => (
               <li key={trip} className="flex items-start gap-2.5 font-body text-text-dark/70 text-[13px] leading-relaxed">
                 <span className="mt-1.5 shrink-0 w-1 h-1 rounded-full bg-river" />
@@ -94,6 +150,15 @@ export default function NearbySpotlight() {
               </li>
             ))}
           </ul>
+          {/* Gateway distances — one-liner */}
+          <div className="flex flex-wrap gap-x-6 gap-y-1 border-t border-text-dark/8 pt-5">
+            {GATEWAY.map((g, i) => (
+              <span key={g} className="font-body text-text-dark/45 text-[12px]">
+                {i > 0 && <span className="mr-6 hidden sm:inline" />}
+                {g}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

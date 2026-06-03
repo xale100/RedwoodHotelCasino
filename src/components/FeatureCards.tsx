@@ -15,7 +15,7 @@ const CARDS = [
   {
     eyebrow: "Play",
     headline: "Your game starts here",
-    body: "Slots, video poker, and table games on a vibrant floor. Players Club members earn on every play.",
+    body: "Slots, video poker, and table games on a vibrant floor. Join Players Club free at the cage — sign up and spin for free credits.",
     href: "/play",
     cta: "See the Floor",
     img: "/casino-floor.jpg",

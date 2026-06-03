@@ -46,10 +46,16 @@ export default function TribalIdentity() {
             ecosystem.
           </p>
 
-          <p className="font-body text-parchment/80 text-[13px] tracking-wide mb-10">
+          <p className="font-body text-parchment/80 text-[13px] tracking-wide mb-3">
             In 2022 the Yurok Tribe led the largest dam removal in United States
             history — returning the Klamath to the salmon and the people who
             have always called it home.
+          </p>
+
+          <p className="font-body text-parchment/80 text-[13px] tracking-wide mb-10">
+            The Tribe&rsquo;s Condor Restoration Program has reintroduced California
+            Condors to Yurok skies. On a clear morning above the property, you
+            may see one soaring — a sight no other hotel on earth can promise.
           </p>
 
           <Link
