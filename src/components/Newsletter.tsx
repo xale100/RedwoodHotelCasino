@@ -26,7 +26,7 @@ export default function Newsletter() {
           </h2>
           <p className="font-body text-parchment/60 text-[14px] leading-relaxed mb-8">
             Get notified about casino promotions, events at the Abalone Bar,
-            and what&rsquo;s happening across Yurok Country. No spam — just good news from Klamath.
+            and what&rsquo;s happening across Yurok Country. Just good news from Klamath, CA.
           </p>
 
           {submitted ? (
@@ -62,7 +62,7 @@ export default function Newsletter() {
           )}
 
           <p className="font-body text-parchment/35 text-[11px] mt-4">
-            No spam. Unsubscribe at any time.
+            Unsubscribe at any time.
           </p>
         </div>
       </div>
