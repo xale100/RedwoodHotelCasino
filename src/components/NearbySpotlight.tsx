@@ -73,8 +73,8 @@ export default function NearbySpotlight() {
               className="font-display italic text-text-dark leading-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 300 }}
             >
-              Start here.
-              <br />Go everywhere.
+              Rest here.
+              <br />Explore Yurok Country.
             </h2>
           </div>
           <div>

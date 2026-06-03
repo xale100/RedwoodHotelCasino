@@ -15,7 +15,7 @@ const CARDS = [
   {
     eyebrow: "Play",
     headline: "Your game starts here",
-    body: "Slots, video poker, and table games on a vibrant floor. Join Players Club free at the cage — sign up and spin for free credits.",
+    body: "Slots and video poker on a freshly refreshed floor — we just turned over nearly half the machines. Join Players Club free at the cage and spin for free credits.",
     href: "/play",
     cta: "See the Floor",
     img: "/casino-floor.jpg",
@@ -24,7 +24,7 @@ const CARDS = [
   },
   {
     eyebrow: "Eat",
-    headline: "River-to-table dining",
+    headline: "Good drinks, hot food",
     body: "The Abalone Bar & Grill serves breakfast, lunch, and dinner with local craft beer and seasonal flavors.",
     href: "/eat",
     cta: "View the Menu",

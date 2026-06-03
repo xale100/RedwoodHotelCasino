@@ -20,7 +20,7 @@ const HOURS = [
         <path d="M9 1.5v3M9 13.5v3M1.5 9h3M13.5 9h3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
-    lines: ["Open 24 Hours", "7 Days a Week"],
+    lines: ["Daily: 11 AM – 11 PM"],
   },
   {
     label: "Abalone Bar & Grill",

@@ -38,12 +38,12 @@ export default function EventsTeaser() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10 md:mb-14">
           <div>
-            <p className="eyebrow mb-3">What&rsquo;s On</p>
+            <p className="eyebrow mb-3">What&rsquo;s Up</p>
             <h2
               className="font-display italic text-text-dark leading-tight"
               style={{ fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 300 }}
             >
-              Upcoming events
+              Events on the calendar
             </h2>
           </div>
           <Link

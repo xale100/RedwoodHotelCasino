@@ -99,7 +99,7 @@ export default function Footer() {
             {/* Hours summary */}
             <div className="font-body text-[12px] leading-relaxed border-t border-parchment/10 pt-5 mb-5">
               <p className="text-parchment/60 tracking-[0.15em] uppercase text-[10px] mb-2">Hours</p>
-              <p>Casino: Open 24 Hours</p>
+              <p>Casino: Daily 11am–11pm</p>
               <p>Hotel Front Desk: 24 Hours</p>
               <p>Abalone Bar: Daily 5pm–8pm</p>
             </div>
