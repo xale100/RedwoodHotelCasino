@@ -101,8 +101,7 @@ export default function Footer() {
               <p className="text-parchment/60 tracking-[0.15em] uppercase text-[10px] mb-2">Hours</p>
               <p>Casino: Open 24 Hours</p>
               <p>Hotel Front Desk: 24 Hours</p>
-              <p>Abalone Bar: Sun–Thu 7am–10pm</p>
-              <p>Fri–Sat 7am–11pm</p>
+              <p>Abalone Bar: Daily 5pm–8pm</p>
             </div>
 
             {/* Social */}

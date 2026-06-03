@@ -31,7 +31,7 @@ const HOURS = [
         <path d="M5 15v1M13 15v1" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
       </svg>
     ),
-    lines: ["Sun – Thu: 7 AM – 10 PM", "Fri – Sat: 7 AM – 11 PM"],
+    lines: ["Daily: 5 PM – 8 PM"],
   },
 ];
 
