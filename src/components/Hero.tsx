@@ -20,7 +20,7 @@ export default function Hero() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(15,26,15,0.25) 0%, rgba(15,26,15,0.55) 40%, rgba(15,26,15,0.80) 70%, rgba(15,26,15,0.92) 100%)",
+            "linear-gradient(to bottom, rgba(15,26,15,0.20) 0%, rgba(15,26,15,0.65) 35%, rgba(15,26,15,0.88) 60%, rgba(15,26,15,0.96) 100%)",
         }}
       />
 
@@ -41,7 +41,7 @@ export default function Hero() {
 
         {/* Sub-headline */}
         <p
-          className="font-display text-parchment/80 leading-snug mb-6"
+          className="font-display text-parchment/90 leading-snug mb-6"
           style={{ fontSize: "clamp(1.1rem, 3vw, 1.75rem)", fontWeight: 400 }}
         >
           Welcome to Redwood Hotel Casino
@@ -49,7 +49,7 @@ export default function Hero() {
 
         {/* Land acknowledgment — woven in, not a disclaimer */}
         <p
-          className="font-display italic text-parchment/50 leading-relaxed mb-10 max-w-md mx-auto"
+          className="font-display italic text-parchment/75 leading-relaxed mb-10 max-w-md mx-auto"
           style={{ fontSize: "clamp(0.9rem, 2vw, 1.05rem)" }}
         >
           We are grateful guests on the ancestral homeland of the Yurok People,

@@ -38,13 +38,13 @@ export default function AbaloneBar() {
               Abalone Bar
               <br />& Grill
             </h2>
-            <p className="font-body text-parchment/70 text-[15px] leading-relaxed mb-4">
+            <p className="font-body text-parchment/85 text-[15px] leading-relaxed mb-4">
               Start your morning with breakfast before the trails. Come back for
               lunch after the river. End the day with dinner and a craft beer
               from our friends at Mad River Brewery — Northern California&rsquo;s
               finest independent brewery.
             </p>
-            <p className="font-body text-parchment/70 text-[15px] leading-relaxed mb-8">
+            <p className="font-body text-parchment/85 text-[15px] leading-relaxed mb-8">
               From hearty breakfasts to fish tacos and hand-pressed burgers, the
               Abalone Bar & Grill is where Klamath slows down and sits together.
             </p>

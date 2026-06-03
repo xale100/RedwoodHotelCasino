@@ -18,7 +18,7 @@ export default function TribalIdentity() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(to right, rgba(15,26,15,0.92) 0%, rgba(15,26,15,0.82) 50%, rgba(15,26,15,0.70) 100%)",
+            "linear-gradient(to right, rgba(15,26,15,0.97) 0%, rgba(15,26,15,0.92) 55%, rgba(15,26,15,0.82) 100%)",
         }}
       />
 
@@ -38,7 +38,7 @@ export default function TribalIdentity() {
             The Yurok People have been its stewards since before memory."
           </blockquote>
 
-          <p className="font-body text-parchment/60 text-[13px] tracking-wide mb-3">
+          <p className="font-body text-parchment/80 text-[13px] tracking-wide mb-3">
             Redwood Hotel Casino is a Yurok Tribe enterprise — proud stewards of
             this land, the river, and the old-growth forest that surrounds us.
             Every visit supports the Tribe&rsquo;s sovereignty, its language
@@ -46,7 +46,7 @@ export default function TribalIdentity() {
             ecosystem.
           </p>
 
-          <p className="font-body text-parchment/60 text-[13px] tracking-wide mb-10">
+          <p className="font-body text-parchment/80 text-[13px] tracking-wide mb-10">
             In 2022 the Yurok Tribe led the largest dam removal in United States
             history — returning the Klamath to the salmon and the people who
             have always called it home.

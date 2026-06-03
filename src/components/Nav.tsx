@@ -47,7 +47,7 @@ export default function Nav() {
               >
                 REDWOOD
               </span>
-              <span className="font-body text-parchment/55 text-[9px] tracking-[0.24em] uppercase leading-none mt-[4px]">
+              <span className="font-body text-parchment/70 text-[9px] tracking-[0.24em] uppercase leading-none mt-[4px]">
                 Hotel · Casino
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="font-body text-parchment/70 text-[13px] tracking-wide hover:text-parchment transition-colors duration-200"
+                className="font-body text-parchment/90 text-[13px] tracking-wide hover:text-parchment transition-colors duration-200"
               >
                 {l.label}
               </Link>

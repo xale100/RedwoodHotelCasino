@@ -95,7 +95,7 @@ export default function FeatureCards() {
                 >
                   {card.headline}
                 </h3>
-                <p className="font-body text-parchment/60 text-[13px] leading-relaxed mb-4 hidden sm:block">
+                <p className="font-body text-parchment/85 text-[13px] leading-relaxed mb-4 hidden sm:block">
                   {card.body}
                 </p>
                 <span className="inline-flex items-center gap-1.5 font-body text-elk-gold text-[13px] font-medium tracking-wide group-hover:gap-3 transition-all duration-200">

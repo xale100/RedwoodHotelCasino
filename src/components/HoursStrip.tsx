@@ -49,7 +49,7 @@ export default function HoursStrip() {
                 </span>
               </div>
               {h.lines.map((line) => (
-                <p key={line} className="font-body text-parchment/70 text-[13px] leading-relaxed">
+                <p key={line} className="font-body text-parchment/85 text-[13px] leading-relaxed">
                   {line}
                 </p>
               ))}

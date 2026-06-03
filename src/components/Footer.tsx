@@ -66,7 +66,7 @@ const SOCIAL = [
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-footer text-parchment/60" role="contentinfo">
+    <footer className="bg-footer text-parchment/80" role="contentinfo">
       {/* Main footer */}
       <div className="max-w-[1280px] mx-auto px-5 md:px-8 lg:px-12 pt-14 pb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-12">
@@ -79,7 +79,7 @@ export default function Footer() {
                 <span className="font-display text-parchment tracking-[0.1em] text-base leading-none" style={{ fontWeight: 500 }}>
                   REDWOOD
                 </span>
-                <span className="font-body text-parchment/45 text-[9px] tracking-[0.22em] uppercase leading-none mt-1">
+                <span className="font-body text-parchment/65 text-[9px] tracking-[0.22em] uppercase leading-none mt-1">
                   Hotel · Casino
                 </span>
               </div>
@@ -91,14 +91,14 @@ export default function Footer() {
               <a href={`tel:${CONTACT.phone}`} className="text-parchment/80 hover:text-parchment transition-colors duration-200 block">
                 {CONTACT.phone}
               </a>
-              <a href={`mailto:${CONTACT.email}`} className="text-parchment/50 hover:text-parchment/80 transition-colors duration-200 block text-[12px]">
+              <a href={`mailto:${CONTACT.email}`} className="text-parchment/70 hover:text-parchment/80 transition-colors duration-200 block text-[12px]">
                 {CONTACT.email}
               </a>
             </address>
 
             {/* Hours summary */}
             <div className="font-body text-[12px] leading-relaxed border-t border-parchment/10 pt-5 mb-5">
-              <p className="text-parchment/40 tracking-[0.15em] uppercase text-[10px] mb-2">Hours</p>
+              <p className="text-parchment/60 tracking-[0.15em] uppercase text-[10px] mb-2">Hours</p>
               <p>Casino: Open 24 Hours</p>
               <p>Hotel Front Desk: 24 Hours</p>
               <p>Abalone Bar: Sun–Thu 7am–10pm</p>
@@ -114,7 +114,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`${s.label} — opens in new tab`}
-                  className="w-9 h-9 flex items-center justify-center rounded-full border border-parchment/20 text-parchment/50 hover:text-parchment hover:border-parchment/40 transition-colors duration-200"
+                  className="w-9 h-9 flex items-center justify-center rounded-full border border-parchment/20 text-parchment/70 hover:text-parchment hover:border-parchment/40 transition-colors duration-200"
                 >
                   {s.icon}
                 </a>
@@ -125,7 +125,7 @@ export default function Footer() {
           {/* Nav columns */}
           {NAV_COLS.map((col) => (
             <div key={col.heading}>
-              <h3 className="font-body text-[10px] font-semibold tracking-[0.2em] uppercase text-parchment/40 mb-4">
+              <h3 className="font-body text-[10px] font-semibold tracking-[0.2em] uppercase text-parchment/60 mb-4">
                 {col.heading}
               </h3>
               <ul className="flex flex-col gap-2.5">
@@ -133,7 +133,7 @@ export default function Footer() {
                   <li key={l.href}>
                     <Link
                       href={l.href}
-                      className="font-body text-[13px] text-parchment/60 hover:text-parchment transition-colors duration-200"
+                      className="font-body text-[13px] text-parchment/80 hover:text-parchment transition-colors duration-200"
                     >
                       {l.label}
                     </Link>
@@ -146,10 +146,10 @@ export default function Footer() {
 
         {/* Bottom strip */}
         <div className="border-t border-parchment/10 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-          <p className="font-body text-[11px] text-parchment/35">
+          <p className="font-body text-[11px] text-parchment/55">
             © {year} Redwood Hotel Casino. Owned and operated by the Yurok Tribe. All rights reserved.
           </p>
-          <p className="font-body text-[11px] text-parchment/35 leading-relaxed max-w-lg">
+          <p className="font-body text-[11px] text-parchment/55 leading-relaxed max-w-lg">
             Must be 21 or older to enter the casino.&nbsp;
             <Link href="/responsible-gaming" className="underline underline-offset-2 hover:text-parchment/55 transition-colors duration-200">
               Gambling Problem?
