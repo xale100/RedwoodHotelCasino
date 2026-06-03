@@ -54,13 +54,13 @@ export default function Nav() {
                 </span>
               </div>
             </Link>
-            <div className="hidden md:block w-px h-7 bg-parchment/20 mx-0.5" aria-hidden="true" />
+            <div className="w-px h-6 bg-parchment/20 mx-0.5" aria-hidden="true" />
             <Image
-              src="/hie-logo.png"
+              src="/hie-logo.svg"
               alt="Holiday Inn Express member hotel"
               width={57}
-              height={36}
-              className="hidden md:block rounded-[2px]"
+              height={28}
+              className="h-7 md:h-8 w-auto rounded-[2px]"
             />
           </div>
 
