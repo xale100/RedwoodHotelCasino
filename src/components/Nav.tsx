@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { href: "/stay", label: "Stay" },
@@ -38,20 +39,30 @@ export default function Nav() {
       >
         <div className="max-w-[1280px] mx-auto px-5 md:px-8 lg:px-12 flex items-center justify-between h-16 md:h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0" aria-label="Redwood Hotel Casino home">
-            <TreeMark />
-            <div className="flex flex-col leading-none">
-              <span
-                className="font-display text-parchment tracking-[0.1em] text-lg leading-none"
-                style={{ fontWeight: 500 }}
-              >
-                REDWOOD
-              </span>
-              <span className="font-body text-parchment/70 text-[9px] tracking-[0.24em] uppercase leading-none mt-[4px]">
-                Hotel · Casino
-              </span>
-            </div>
-          </Link>
+          <div className="flex items-center gap-3 shrink-0">
+            <Link href="/" className="flex items-center gap-3" aria-label="Redwood Hotel Casino home">
+              <TreeMark />
+              <div className="flex flex-col leading-none">
+                <span
+                  className="font-display text-parchment tracking-[0.1em] text-lg leading-none"
+                  style={{ fontWeight: 500 }}
+                >
+                  REDWOOD
+                </span>
+                <span className="font-body text-parchment/70 text-[9px] tracking-[0.24em] uppercase leading-none mt-[4px]">
+                  Hotel · Casino
+                </span>
+              </div>
+            </Link>
+            <div className="hidden md:block w-px h-7 bg-parchment/20 mx-0.5" aria-hidden="true" />
+            <Image
+              src="/hie-logo.png"
+              alt="Holiday Inn Express member hotel"
+              width={57}
+              height={36}
+              className="hidden md:block rounded-[2px]"
+            />
+          </div>
 
           {/* Desktop links */}
           <nav className="hidden md:flex items-center gap-8 lg:gap-10" aria-label="Main navigation">
