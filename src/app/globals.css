@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Palette ─────────────────────────────────────── */
+  --color-canopy:    #0F1A0F;
+  --color-bark:      #2C1508;
+  --color-river:     #4E7A5C;
+  --color-salmon:    #C86040;
+  --color-fog:       #8CA8B0;
+  --color-parchment: #EDE5D8;
+  --color-mist:      #FAF7F2;
+  --color-elk-gold:  #C89440;
+  --color-text-dark: #1A1A1A;
+  --color-footer:    #070E07;
+
+  /* ── Typography ──────────────────────────────────── */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body:    Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FAF7F2;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Eyebrow label utility */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #4E7A5C;
+}
+
+.eyebrow-light {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(237, 229, 216, 0.6);
+}
